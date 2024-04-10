@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailored Travel</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
 </head>
+
 <body>
     <main>
-        <section id="section">
-        <h1>Tailor Travel</h1>
-        <p>
+        <section id="main-section">
+            <h1>Welcome to Tailored Travel!</h1>
+            <p>Choose an option below to find a location near you.</p>
+            <!-- <id for business finder-->
+            <select id="business">
+                <option value="null">Choose option</option>
+                <option value="coffee">Coffee</option>
+                <option value="Restaurants">Restaurants</option>
+                <option value="hotel">Hotel</option>
+                <option value="market">Groceries</option>
+            </select>
+           <button id ="submit">submit</button> 
+        </section>
+        <!-- id for map section -->
+        <section id="map"></section>
 
-        </p>
-</section>
-            
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 
 
-        
-
-
+        </section>
 
     </main>
+
     <script src="/assets/index.js"></script>
-    
+
 </body>
+
 </html>
